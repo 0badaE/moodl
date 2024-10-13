@@ -15,7 +15,7 @@ const fugazOne = Fugaz_One({
 });
 
 export default function Dashboard() {
-  const { currentUser, userDataObj, setUserDataObj, loading } = useAuth()
+  const { currentUser, userDataObj, setUserDataObj, Loading } = useAuth()
   const [data, setData] = React.useState({})
   const now = new Date()
 
@@ -98,7 +98,7 @@ export default function Dashboard() {
     setData(userDataObj)
   },[currentUser, userDataObj])
 
-if(loading){
+if(Loading){
   return <Loading/>
 }
 
