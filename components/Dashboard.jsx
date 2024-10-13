@@ -5,7 +5,7 @@ import Calendar from './Calendar';
 import { useAuth } from '@/context/AuthContext';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/firebase';
-import Loading from './Loading';
+import Loading from './Loading'
 import Login from './Login';
 
 const fugazOne = Fugaz_One({
