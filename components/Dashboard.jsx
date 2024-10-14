@@ -5,7 +5,7 @@ import Calendar from './Calendar';
 import { useAuth } from '@/context/AuthContext';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '@/firebase';
-import Loading from './Loading'
+import LoadingComponent from './Loading'
 import Login from './Login';
 
 const fugazOne = Fugaz_One({
@@ -99,7 +99,7 @@ export default function Dashboard() {
   },[currentUser, userDataObj])
 
 if(Loading){
-  return <Loading/>
+  return <LoadingComponent/>
 }
 
 if(!currentUser){
